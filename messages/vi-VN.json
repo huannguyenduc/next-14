@@ -1,0 +1,171 @@
+{
+  "site": {
+    "title": "Wellnez",
+    "desc": "Mô tả"
+  },
+  "auth": {
+    "email": "Email",
+    "password": "Mật khẩu",
+    "confirmPassword": "Xác nhận mật khẩu",
+    "firstName": "Tên",
+    "lastName": "Họ",
+    "login": "Đăng nhập",
+    "loginDesc": "Nhập địa chỉ email và mật khẩu của bạn để truy cập bảng điều khiển quản trị",
+    "forgotPass": "Quên mật khẩu",
+    "noAccount": "Chưa có tài khoản? Tạo một tài khoản",
+    "here": "tại đây",
+    "forgotPassword": "Quên mật khẩu",
+    "register": "Đăng ký",
+    "agree": "Tôi đồng ý với",
+    "and": "Và",
+    "termOfUse": "Điều khoản sử dụng",
+    "privacyOPolicy": "Chính sách bảo mật",
+    "alreadyHaveAccount": "Đã có tài khoản? Đăng nhập"
+  },
+  "validate": {
+    "required": "Trường này không được để trống!",
+    "email": "Vui lòng nhập một địa chỉ email hợp lệ!",
+    "max": "Trường này không được vượt quá {length} ký tự!",
+    "match": "Hai {field} bạn đã nhập không khớp!"
+  },
+  "admin": {
+    "siderMenu": {
+      "dashboard": "Bảng điều khiển",
+      "users": "Quản lý người dùng",
+      "doctors": "Quản lý bác sĩ"
+    },
+    "dashboard": {
+      "welcomeText": "Chào mừng đến với Bảng điều khiển quản trị Wellnez"
+    },
+    "users": {
+      "title": "Quản lý người dùng",
+      "search": "Tìm kiếm",
+      "export": "Xuất",
+      "id": "ID",
+      "name": "Tên",
+      "kanaName": "Tên Kana",
+      "company": "Công ty",
+      "email": "Email",
+      "gender": "Giới tính",
+      "genders": {
+        "male": "Nam",
+        "female": "Nữ",
+        "other": "Khác"
+      },
+      "birthday": "Ngày sinh",
+      "country": "Quốc gia",
+      "shippingAddress": "Địa chỉ giao hàng",
+      "magazineSubscription": "Đăng ký tạp chí",
+      "purchaseHistory": "Lịch sử mua hàng",
+      "yes": "Có",
+      "no": "Không"
+    },
+    "doctors": {
+      "title": "Quản lý bác sĩ",
+      "search": "Tìm kiếm",
+      "export": "Xuất",
+      "id": "ID",
+      "name": "Tên",
+      "kanaName": "Tên Kana",
+      "company": "Công ty",
+      "email": "Email",
+      "gender": "Giới tính",
+      "genders": {
+        "male": "Nam",
+        "female": "Nữ",
+        "other": "Khác"
+      },
+      "birthday": "Ngày sinh",
+      "country": "Quốc gia",
+      "shippingAddress": "Địa chỉ giao hàng",
+      "magazineSubscription": "Đăng ký tạp chí",
+      "purchaseHistory": "Lịch sử mua hàng",
+      "yes": "Có",
+      "no": "Không"
+    },
+    "doctor": {
+      "profile": {
+        "fullness": "Mức độ đầy đủ",
+        "personalInfo": {
+          "title": "Thông tin cá nhân",
+          "contactInfo": "Thông tin liên hệ"
+        },
+        "members": {
+          "title": "Thành viên"
+        },
+        "customer": {
+          "title": "Khách hàng"
+        },
+        "commission": {
+          "title": "Hoa hồng"
+        }
+      }
+    }
+  },
+  "common": {
+    "viLocale": "Tiếng Việt",
+    "enLocale": "Tiếng Anh",
+    "id": "ID",
+    "email": "Email",
+    "address": "Địa chỉ",
+    "firstName": "Tên",
+    "newPassword": "Mật khẩu mới",
+    "lastName": "Họ",
+    "forgotPass": "Quên mật khẩu",
+    "resetPassword": "Đặt lại mật khẩu",
+    "age": "Tuổi",
+    "auto": "Tự động",
+    "zipcode": "Mã bưu chính",
+    "avatar": "Ảnh đại diện",
+    "cardiologist": "Bác sĩ tim mạch",
+    "city": "Thành phố",
+    "confirm": "Xác nhận",
+    "confirmPassword": "Xác nhận mật khẩu",
+    "copied": "Đã sao chép vào bộ nhớ tạm",
+    "copy": "Sao chép",
+    "country": "Quốc gia",
+    "dateTime": "Ngày & Giờ",
+    "dateTimePicker": "Chọn ngày giờ",
+    "deleteQuestion": "Bạn có chắc chắn muốn xóa không?",
+    "doctor": "Bác sĩ",
+    "dropdown": "Danh sách thả xuống",
+    "error": "Lỗi",
+    "feed": "Bảng tin",
+    "here": "tại đây",
+    "inputCode": "Nhập mã 6 chữ số",
+    "loading": "Đang tải...",
+    "lock": "Khóa",
+    "login": "Đăng nhập",
+    "map": "Bản đồ",
+    "maps": "Bản đồ",
+    "modal": "Cửa sổ modal",
+    "name": "Tên",
+    "notFound": "Xin lỗi, không tìm thấy kết quả",
+    "notification": "Thông báo",
+    "oops": "Ôi không!",
+    "pages": "Trang",
+    "password": "Mật khẩu",
+    "payment": "Thanh toán",
+    "phone": "Điện thoại",
+    "radio": "Nút radio",
+    "rate": "Đánh giá",
+    "result": "Kết quả",
+    "serverError": "Lỗi máy chủ",
+    "success": "Thành công",
+    "today": "Hôm nay",
+    "twoFactorAuthPage": "Trang xác thực hai yếu tố",
+    "verifCodeSent": "Chúng tôi đã gửi mã xác minh đến email của bạn",
+    "upload": "Tải lên",
+    "back": "Quay lại",
+    "view": "Xem",
+    "actions": "Hành động",
+    "button": "Nút",
+    "delete": "Xóa",
+    "edit": "Chỉnh sửa",
+    "block": "Khóa",
+    "save": "Lưu",
+    "ok": "Đồng ý",
+    "submit": "Gửi",
+    "cancel": "Hủy"
+  }
+}
