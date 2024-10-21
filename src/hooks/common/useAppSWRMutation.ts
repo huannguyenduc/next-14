@@ -17,7 +17,7 @@ export const useAppSWRMutation = <
   Error = any,
   SWRMutationKey extends Key = Key,
   ExtraArg = never,
-  SWRData = Data,
+  SWRData = Data
 >(
   key: SWRMutationKey,
   axiosFetcher: (...args: any) => Promise<AxiosResponse<Data>>,

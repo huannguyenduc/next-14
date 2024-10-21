@@ -11,7 +11,7 @@ import useDoctors from './index.utils';
 
 const Doctors: React.FC = () => {
   const t = useTranslations('admin');
-  const { loading, columns, handleParamsChange, handleTableChange } = useDoctors();
+  const { loading, columns, tableData, handleParamsChange, handleTableChange } = useDoctors();
 
   return (
     <S.Doctors>

@@ -90,7 +90,9 @@ export const mediaMax =
 export const mediaRange =
   <Lower extends Breakpoints, Upper extends Breakpoints>(lower: Lower, upper: Upper) =>
   ({ theme }: { readonly theme: DefaultTheme }) =>
-    `${normalize(theme.breakpoints[lower])} <= width < ${normalize(theme.breakpoints[upper])}` as const;
+    `${normalize(theme.breakpoints[lower])} <= width < ${normalize(
+      theme.breakpoints[upper]
+    )}` as const;
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const mergeBy = (a: any[], b: any[], key: string): any[] =>

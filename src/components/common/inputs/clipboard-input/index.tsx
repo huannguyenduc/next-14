@@ -19,7 +19,7 @@ export const ClipboardInput: React.FC<ClipboardInputProps> = ({ valueToCopy, ...
       navigator.clipboard.writeText(valueToCopy).then(() => {
         notification.info({ message: 'copied' });
       }),
-    [valueToCopy]
+    [notification, valueToCopy]
   );
 
   return (

@@ -1,11 +1,8 @@
 import EyeIcon from '@/assets/svg/icon-eye.svg';
-import { DATE_FORMAT } from '@/constants';
 import { useGetDoctors } from '@/hooks/features/use-doctors';
 import { Doctor, DoctorParams, PaginationInterface } from '@/interfaces';
-import { BaseOptionType, DefaultOptionType } from 'antd/es/select';
 import { ColumnsType } from 'antd/es/table';
 import { ColumnTitle, Key } from 'antd/es/table/interface';
-import dayjs from 'dayjs';
 import { pickBy } from 'lodash';
 import { useTranslations } from 'next-intl';
 import React, { useMemo, useState } from 'react';

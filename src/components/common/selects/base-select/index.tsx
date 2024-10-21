@@ -13,6 +13,7 @@ export interface BaseSelectProps extends ComponentProps<typeof AntSelect> {
   className?: string;
 }
 
+// eslint-disable-next-line react/display-name
 export const BaseSelect = React.forwardRef<RefSelectProps, BaseSelectProps>(
   ({ className, width, shadow, children, ...props }, ref) => (
     <S.Select

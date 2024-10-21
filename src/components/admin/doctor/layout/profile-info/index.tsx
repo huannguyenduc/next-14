@@ -2,7 +2,6 @@
 
 import { BaseAvatar } from '@/components/common/base-avatar';
 import { Doctor } from '@/interfaces';
-import { useTranslations } from 'next-intl';
 import React, { useState } from 'react';
 
 import * as S from './index.styles';
@@ -13,8 +12,6 @@ interface ProfileInfoProps {
 
 export const ProfileInfo: React.FC<ProfileInfoProps> = ({ profileData }) => {
   const [fullness] = useState(90);
-
-  const t = useTranslations();
 
   return profileData ? (
     <S.Wrapper>

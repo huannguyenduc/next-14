@@ -1,4 +1,3 @@
-import EyeIcon from '@/assets/svg/icon-eye.svg';
 import { BaseButton } from '@/components/common/base-button';
 import { useGetDoctors } from '@/hooks/features/use-doctors';
 import { Doctor, DoctorParams, PaginationInterface } from '@/interfaces';

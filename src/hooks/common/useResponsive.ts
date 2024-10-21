@@ -34,8 +34,8 @@ export const useResponsive = (): ResponsiveReturnValues => {
   const breakpoint = isDesktop
     ? WidthCategory.large
     : isTablet
-      ? WidthCategory.medium
-      : WidthCategory.small;
+    ? WidthCategory.medium
+    : WidthCategory.small;
 
   return {
     isMobile,
