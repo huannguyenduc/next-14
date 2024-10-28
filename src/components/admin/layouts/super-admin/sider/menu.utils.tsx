@@ -24,7 +24,7 @@ export const sidebarNavigation: SidebarNavigationItem[] = [
       {
         title: 'siderMenu.users',
         key: 'sub-menu',
-        url: 'admin/users',
+        url: '/admin/users',
       },
     ],
   },

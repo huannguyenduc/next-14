@@ -1,13 +1,25 @@
-import type { BreadcrumbProps } from 'antd';
-import type { BreadcrumbItemType } from 'antd/es/breadcrumb/Breadcrumb';
-import { FC } from 'react';
+import { BreadcrumbProps } from 'antd/lib/breadcrumb';
+import { ItemType } from 'antd/lib/breadcrumb/Breadcrumb';
+import React from 'react';
 
 import * as S from './index.styles';
 
-export type BaseBreadcrumbItemType = BreadcrumbItemType;
+interface BaseBreadcrumbProps extends BreadcrumbProps {
+  items: Array<{
+    title: React.ReactNode;
+    href?: string;
+  }>;
+}
 
-export type BaseBreadcrumbProps = BreadcrumbProps;
+export const BaseBreadcrumb: React.FC<BaseBreadcrumbProps> = ({ items, ...props }) => {
+  const itemRender = (item: ItemType, _: unknown, items: ItemType[]) => {
+    const last = items.indexOf(item) === items.length - 1;
+    return last ? (
+      <S.CurrentItem>{item.title}</S.CurrentItem>
+    ) : (
+      <S.LinkItem href={item.href || '#'}>{item.title}</S.LinkItem>
+    );
+  };
 
-export const BaseBreadcrumb: FC<BaseBreadcrumbProps> = (props) => {
-  return <S.Breadcrumb {...props} />;
+  return <S.Breadcrumb items={items} itemRender={itemRender} {...props} />;
 };

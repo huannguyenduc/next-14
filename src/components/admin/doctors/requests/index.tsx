@@ -4,15 +4,13 @@ import { BaseTable } from '@/components/common/base-table';
 import { SearchOutlined } from '@ant-design/icons';
 import { debounce } from 'lodash';
 import { useTranslations } from 'next-intl';
-import { useRouter } from 'next/navigation';
 import React from 'react';
 
-import * as S from './index.style';
+import * as S from '../index.style';
 import useDoctors from './index.utils';
 
-const Doctors: React.FC = () => {
+const DoctorRequests: React.FC = () => {
   const t = useTranslations();
-  const router = useRouter();
   const { loading, columns, tableData, handleParamsChange, handleTableChange } = useDoctors();
 
   return (
@@ -20,7 +18,7 @@ const Doctors: React.FC = () => {
       <S.DoctorsTablesWrapper>
         <S.DoctorsCard
           id="basic-table"
-          title={t('admin.doctors.title')}
+          title={t('admin.doctors.requestTitle')}
           padding="1.25rem 1.25rem 0"
         >
           <S.DoctorsHeader>
@@ -31,13 +29,6 @@ const Doctors: React.FC = () => {
                 onChange={debounce((e) => handleParamsChange('search', e.target.value), 300)}
               />
             </S.DoctorsActions>
-
-            <S.DoctorsButton
-              type={'primary'}
-              onClick={() => router.push('/admin/doctors/requests')}
-            >
-              {t('common.requests')}
-            </S.DoctorsButton>
           </S.DoctorsHeader>
 
           <BaseTable
@@ -56,4 +47,4 @@ const Doctors: React.FC = () => {
   );
 };
 
-export default Doctors;
+export default DoctorRequests;

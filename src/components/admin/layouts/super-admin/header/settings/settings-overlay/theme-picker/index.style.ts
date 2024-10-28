@@ -1,5 +1,4 @@
 import { BaseButton } from '@/components/common/base-button';
-import { BORDER_RADIUS } from '@/constants';
 import styled, { css } from 'styled-components';
 
 interface BtnProps {
@@ -20,23 +19,21 @@ export const ButtonGroup = styled.div<BtnProps>`
   display: inline-flex;
   padding: 0.325rem;
   column-gap: 0.325rem;
-
-  border-radius: ${BORDER_RADIUS};
-
-  background-color: ${({ theme }) => theme.primary};
+  border-radius: ${({ theme }) => theme.borderRadius};
+  background-color: rgba(${({ theme }) => theme.rgb.primary}, 0.1);
 
   ${(props) =>
     props.$isFirstActive
       ? css`
           & > ${Btn}:first-of-type {
-            background: ${({ theme }) => theme.primary};
-            color: ${({ theme }) => theme.textSecondary};
+            background: ${props.theme.primary};
+            color: ${props.theme.textSecondary};
           }
         `
       : css`
           & > ${Btn}:last-of-type {
-            background: ${({ theme }) => theme.warning};
-            color: ${({ theme }) => theme.textSecondary};
+            background: ${props.theme.warning};
+            color: ${props.theme.textSecondary};
           }
         `}
 

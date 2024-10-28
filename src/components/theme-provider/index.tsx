@@ -4,6 +4,7 @@ import { ThemeType } from '@/interfaces';
 import useAppState from '@/stores/app';
 import { getThemeConfig } from '@/styles/theme-config';
 import { themeObject } from '@/styles/themes/theme-variables';
+import { LoadingOutlined } from '@ant-design/icons';
 import { ConfigProvider, App as FeedbackProvider, Spin } from 'antd';
 import React, { useRef } from 'react';
 import { PropsWithChildren, useEffect, useState } from 'react';
@@ -30,7 +31,7 @@ export const ThemesProvider = (props: PropsWithChildren) => {
   if (!mounted) {
     return (
       <div style={styles}>
-        <Spin />
+        <Spin indicator={<LoadingOutlined spin />} size="large" />
       </div>
     );
   }

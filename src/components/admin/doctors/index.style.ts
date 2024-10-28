@@ -6,13 +6,9 @@ import styled from 'styled-components';
 
 export const Doctors = styled.div``;
 
-export const DoctorsTablesWrapper = styled.div`
-  margin-top: 1.875rem;
-`;
+export const DoctorsTablesWrapper = styled.div``;
 
-export const DoctorsCard = styled(BaseCard)`
-  margin-bottom: 2rem;
-`;
+export const DoctorsCard = styled(BaseCard)``;
 
 export const DoctorsHeader = styled.div`
   display: flex;

@@ -1,4 +1,4 @@
-import EyeIcon from '@/assets/svg/icon-eye.svg';
+import { BaseButton } from '@/components/common/base-button';
 import { useGetDoctors } from '@/hooks/features/use-doctors';
 import { Doctor, DoctorParams, PaginationInterface } from '@/interfaces';
 import { ColumnsType } from 'antd/es/table';
@@ -19,9 +19,11 @@ export interface ICollum {
 
 interface Utils {
   loading: boolean;
+  addModalOpen: boolean;
   params: DoctorParams;
   tableData: DoctorTableState;
   columns: ColumnsType<Doctor>;
+  setAddModalOpen: (value: boolean) => void;
   handleParamsChange: (key: string, value: unknown) => void;
   handleTableChange: (pagination: PaginationInterface) => void;
 }
@@ -42,12 +44,19 @@ const inittialParams = {
 
 export default function useMembers(): Utils {
   const t = useTranslations();
+  const [addModalOpen, setAddModalOpen] = useState<boolean>(false);
   const [params, setParams] = useState<DoctorParams>(inittialParams);
   const { data, isLoading } = useGetDoctors(pickBy(params));
 
-  const tableData = useMemo(() => {
+  const tableData: any = useMemo(() => {
     return {
-      data: data?.doctors || [],
+      data: data?.doctors || [
+        {
+          id: 1,
+          name: 'John Doe',
+          email: 'john.doe@example.com',
+        },
+      ],
       pagination: {
         current: Number(1) || initialPagination.current,
         pageSize: initialPagination.pageSize,
@@ -97,9 +106,9 @@ export default function useMembers(): Utils {
       key: 'actions',
       width: '10%',
       render: () => (
-        <div>
-          <EyeIcon />
-        </div>
+        <BaseButton size="small" severity="info">
+          {t('common.view')}
+        </BaseButton>
       ),
     },
   ];
@@ -108,7 +117,9 @@ export default function useMembers(): Utils {
     loading: isLoading,
     params,
     tableData,
+    addModalOpen,
     columns,
+    setAddModalOpen,
     handleParamsChange,
     handleTableChange,
   };

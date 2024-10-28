@@ -63,25 +63,9 @@
     "doctors": {
       "title": "Doctor Management",
       "search": "Search",
-      "export": "Export",
-      "id": "ID",
-      "name": "Name",
-      "kanaName": "Kana Name",
-      "company": "Company",
-      "email": "Email",
-      "gender": "Gender",
-      "genders": {
-        "male": "Male",
-        "female": "Female",
-        "other": "Other"
-      },
-      "birthday": "Birthday",
-      "country": "Country",
-      "shippingAddress": "Shipping Address",
-      "magazineSubscription": "Magazine Subscription",
-      "purchaseHistory": "Purchase History",
-      "yes": "Yes",
-      "no": "No"
+      "requestTitle": "Doctor Registration Requests",
+      "requests": "Registration Requests",
+      "request": "request"
     },
     "doctor": {
       "profile": {
@@ -126,7 +110,7 @@
     "country": "Country",
     "dateTime": "Date & Time",
     "dateTimePicker": "DateTime Picker",
-    "deleteQuestion": "Are you sure you want to delete?",
+    "deleteQuestion": "Are you sure to delete this {name}?",
     "doctor": "Doctor",
     "dropdown": "Dropdown",
     "error": "Error",
@@ -159,13 +143,19 @@
     "back": "Back",
     "view": "View",
     "actions": "Actions",
+    "add": "Add",
+    "requests": "Requests",
     "button": "Button",
     "delete": "Delete",
     "block": "Block",
+    "approve": "Approve",
+    "reject": "Reject",
     "edit": "Edit",
     "save": "Save",
     "ok": "Ok",
     "submit": "Submit",
-    "cancel": "Cancel"
+    "cancel": "Cancel",
+    "yes": "Yes",
+    "no": "No"
   }
 }
